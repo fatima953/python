@@ -1,7 +1,11 @@
-n = int(input("enter number of rows"))
-for i in range(n):
-    for j in range(i):
-        print(" ", end="")
-    for j in range(n, i, -1):
-        print("^", end="")
-    print()
+import turtle
+turtle.Screen().bgcolor("orange")
+turtle.Screen().setup(300,400)
+poligon = turtle.Turtle()
+sides = 6
+angle = 360 / sides
+lenth = 70
+
+for i in range(sides):
+    poligon.forward(lenth)
+    poligon.right(angle)
