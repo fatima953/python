@@ -1,20 +1,18 @@
-def well_wishes():
-    print("nice to meet you")
-    print("nice to meet you too")
+#while loop 
+#variable
+i = 5
+#condition
+while i < 11:
+    print(i)
 
-well_wishes()
+#increment
+i = i + 2
 
-#function with arguments
-def weather_condition(a):
-   if a == "summer":
-       print("wear cotten and thin clothes")
-   elif a == "winter":
-       print("wear warm clothes")
-   elif a == "spring":
-       print("wear wool clothes")
-   elif a == "autumn":
-       print("wear sweat shirts")
-   else:
-       print("invalid season")
-weather = input("enter season here")
-weather_condition(weather)
+#never ending loop
+while True:
+   a = input("do you want more pizza?, yes/no:") 
+   if a == "yes":
+       print("here you are, a piece of pizza")
+   else: 
+       print("say  bye bye to pizza")
+       exit()
