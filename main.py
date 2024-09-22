@@ -1,3 +1,5 @@
-a = int(input("enter a num here: "))
-b = int(input("enter b num here:"))
-print("the answer of a + b is ", a + b)
+#defalt argument
+def greeting(wish,word = "good"):
+    return word + wish
+msg = input("type your message:")
+print(greeting(msg))
