@@ -1,27 +1,18 @@
-#Exception Handling
+#while loop 
+#variable
+i = 5
+#condition
+while i < 11:
+    print(i)
 
-try:
-    num = int(input("enter number here:"))
-    print(num)
-except ValueError as ex:
-    print("Exception:" ,ex)
-print("done")
+#increment
+i = i + 2
 
-#Regular Way
-
-num = int(input("enter number here:"))
-print(num)
-
-
-try:
-    num1 = int(input("enter number here:"))
-    num2 = int(input("enter number here:"))
-    print(num1/num2)
-except ValueError as ex:
-    print("Exception:" ,ex)
-except ZeroDivisionError as ex:
-    print("Exception:" ,ex)
-except SyntaxError as ex:
-    print("Exception:" ,ex)
-finally:
-    print("done")
+#never ending loop
+while True:
+   a = input("do you want more pizza?, yes/no:") 
+   if a == "yes":
+       print("here you are, a piece of pizza")
+   else: 
+       print("say  bye bye to pizza")
+       exit()
