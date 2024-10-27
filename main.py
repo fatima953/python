@@ -1,18 +1,8 @@
-#dictionary
-student = {"name":"Fatima", "age": 10, "grade": 5}
-print(student)
-print("my name is", student["name"])
-print("i am ",student["age"],"years old")
-print("i am in grade",student["grade"])
-student["country"] = "China"
-student["hobby"] = "skating"
-print(student)
-del student["country"]
-print(student)
-print(len(student))
-student.clear()
-print(student)
-#country code
-country_code = {"China" : 86, "India" : 91, "Pakistan" : 92}
-print(country_code.get("Pakistan", "not found"))
-print(country_code.get("Nepal", "not found"))
+t1 = (1,4,3,2,7,8,5,6,8,9,8,7,6,7)
+print(t1)
+print(len(t1))
+t2 = (4,5,8)
+t3 =  t2 + t1
+print(t3)
+print(t3.count(8,9))
+print(t3[7 : 9])
